@@ -1,24 +1,5 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-:root {
-  --accent-color: #ff0070;
-  --accent-color-with-background: #000028;
-  --accent-heading-color: #db00ff;
-  --text-color: #f1b2ce;
-  --heading-color: #ff0070;
-  --button-hover-color: #ff007066;
-  --decorative-circle-color: #ff0070;
-  --menu-color: #ff0070;
-  --headers-color: #ff0070;
-  --rec-color: #ff0070;
-  --cover-image: url(../images/cover-image-dark.png);
-  --gap: 20px;
-  --font-family: "IBM Plex mono";
-  --accent-heading-fs-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --accent-heading-fs-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  --bold: 700;
-}
-
 .page {
   font-family: var(--font-family);
   margin: 0 auto;
@@ -30,14 +11,6 @@
   background-position: top center;
   background-size: cover;
   background-attachment: fixed;
-}
-
-.decorated-heading {
-  margin: 0 0 20px;
-  color: var(--heading-color);
-  font-weight: var(--bold);
-  font-size: 18px;
-  line-height: 130%;
 }
 
 .decorated-link {
@@ -58,16 +31,24 @@
   outline: none;
 }
 
+.decorated-heading {
+  margin: 0 0 20px;
+  color: var(--heading-color);
+  font-weight: var(--bold);
+  font-size: 18px;
+  line-height: 130%;
+}
+
 .title-decor {
   font-size: 18px;
+  font-weight: var(--bold);
   line-height: 130%;
   color: var(--accent-color-with-background);
   background-color: var(--accent-color);
 }
 
-.title-decor-bold {
+.subtitle-decor {
   font-size: 18px;
-  font-weight: var(--bold);
   line-height: 130%;
   color: var(--accent-color-with-background);
   background-color: var(--accent-color);
@@ -80,6 +61,8 @@
   grid-template-rows: 1fr min-content 1fr;
   position: relative;
   align-items: center;
+  min-height: 668px;
+  height: 100vh;
 }
 
 .header__title {
@@ -126,15 +109,8 @@
   }
 }
 
-@media (min-width: 768px) {
-  .header__text {
-    margin: 0;
-  }
-}
-
 @media (min-width: 1024px) {
   .header__text {
-    margin: 0;
     padding: 0;
     max-inline-size: 491px;
   }
@@ -142,7 +118,6 @@
 
 .decorated-zone {
   position: relative;
-  min-block-size: 97vh;
   margin: 5px 0 0;
 }
 
@@ -165,18 +140,6 @@
   border-bottom: 1px solid var(--decorative-circle-color);
   border-left: 1px solid var(--decorative-circle-color);
   inset-block-end: 0;
-}
-
-@media (min-width: 768px) {
-  .decorated-zone {
-    min-height: 95vh;
-  }
-}
-
-@media (min-width: 1024px) {
-  .decorated-zone {
-    min-height: 94vh;
-  }
 }
 
 .rec-icon {
@@ -303,14 +266,16 @@
     margin-top: 60px;
   }
 
-  .what__heading {
-    width: 236px;
+  .decorated-heading {
+    max-width: 236px;
+    width: 100%;
   }
 }
 
 @media (min-width: 1024px) {
-  .what__heading {
-    width: 316px;
+  .decorated-heading {
+    max-width: 316px;
+    width: 100%;
   }
 
   .what__list {
@@ -376,6 +341,9 @@
 
 .gallery__img {
   inline-size: 100%;
+  object-position: center;
+  object-fit: cover;
+  block-size: 100%;
 }
 
 @media (min-width: 768px) {
@@ -407,10 +375,6 @@
   .gallery__list-item:last-child {
     grid-column: 2/4;
   }
-  .gallery__img {
-    object-fit: cover;
-    block-size: 100%;
-  }
 }
 
 /* footer */
@@ -419,6 +383,8 @@
   display: grid;
   justify-content: center;
   align-items: center;
+  min-height: 668px;
+  height: 100vh;
 }
 
 .footer__text {
