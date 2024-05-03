@@ -16,6 +16,7 @@
   --headers-color: #ff0070;
   --rec-color: #ff0070;
   --cover-image: url(../images/cover-image-dark.png);
+  --decor-zone-color: #ff0070;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -31,5 +32,6 @@
     --headers-color: #ff0070;
     --rec-color: #ff0070;
     --cover-image: url(../images/cover-image-dark.png);
+    --decor-zone-color: #ff0070;
   }
 }
