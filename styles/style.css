@@ -31,7 +31,7 @@
 } 
 
 .decorated-heading {
-  margin: 0 0 15px 0;
+  margin: 10px 0;
   color: var(--heading-color);
   font-weight: var(--bold);
   font-size: 18px;
@@ -244,6 +244,7 @@
   font-size: 18px;
   font-style: normal;
   line-height: 130%;
+  padding: 6px 0;
 }
 
 .section-text:last-child {
