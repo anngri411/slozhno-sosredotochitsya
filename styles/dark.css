@@ -4,32 +4,34 @@
   переключая тему
 */
 
-.page.theme_light {
-  --accent-color: #ff8dcb;
-  --accent-color-with-background: #353430;
-  --accent-heading-color: #ffc2e6;
-  --text-color: #353430;
-  --button-hover-color: #32312d66;
-  --decorative-circle-clr: #353430;
-  --menu-color: #353430;
-  --rec-color: transparent;
-  --heading-color: #353430;
-  --cover-image: url(../images/cover-image-light.png);
-  --decor-zone-color: #353430;
+.page.theme_dark {
+  --accent-color: #ff0070;
+  --accent-color-with-background: #000028;
+  --accent-heading-color: #db00ff;
+  --text-color: #F1B2CE;
+  --button-hover-color: rgba(255, 0, 112, 0.4);
+  --heading-color: #ff0070;
+  --decorative-circle-clr: #ff0070;
+  --menu-color: #ff0070;
+  --headers-color: #ff0070;
+  --rec-color: #ff0070;
+  --cover-image: url(../images/cover-image-dark.png);
+  --decor-zone-color: #ff0070;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
-    --accent-color: #ff8dcb;
-    --accent-color-with-background: #353430;
-    --accent-heading-color: #ffc2e6;
-    --text-color: #353430;
-    --button-hover-color: #32312d66;
-    --decorative-circle-clr: #353430;
-    --menu-color: #353430;
-    --rec-color: transparent;
-    --heading-color: #353430;
-    --cover-image: url(../images/cover-image-light.png);
-    --decor-zone-color: #353430;
+    --accent-color: #ff0070;
+    --accent-color-with-background: #000028;
+    --accent-heading-color: #db00ff;
+    --text-color: #F1B2CE;
+    --button-hover-color:rgba(255, 0, 112, 0.4);
+    --heading-color: #ff0070;
+    --decorative-circle-clr: #ff0070;
+    --menu-color: #ff0070;
+    --headers-color: #ff0070;
+    --rec-color: #ff0070;
+    --cover-image: url(../images/cover-image-dark.png);
+    --decor-zone-color: #ff0070;
   }
 }
