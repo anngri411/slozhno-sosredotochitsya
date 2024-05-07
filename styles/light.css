@@ -15,6 +15,7 @@
   --rec-color: transparent;
   --heading-color: #353430;
   --cover-image: url(../images/cover-image-light.png);
+  --decor-zone-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
@@ -23,11 +24,12 @@
     --accent-color-with-background: #353430;
     --accent-heading-color: #ffc2e6;
     --text-color: #353430;
-    --button-hover-color: #32312d66;
+    --button-hover-color: rgba(53, 52, 48, 1);
     --decorative-circle-clr: #353430;
     --menu-color: #353430;
     --rec-color: transparent;
     --heading-color: #353430;
     --cover-image: url(../images/cover-image-light.png);
+    --decor-zone-color: #353430;
   }
 }
