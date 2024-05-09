@@ -9,7 +9,7 @@
   --accent-color-with-background: #353430;
   --accent-heading-color: #ffc2e6;
   --text-color: #353430;
-  --button-hover-color: #32312d66;
+  --button-hover-color: rgba(50, 49, 45, 0.4);
   --decorative-circle-clr: #353430;
   --menu-color: #353430;
   --rec-color: transparent;
@@ -24,7 +24,7 @@
     --accent-color-with-background: #353430;
     --accent-heading-color: #ffc2e6;
     --text-color: #353430;
-    --button-hover-color: rgba(53, 52, 48, 1);
+    --button-hover-color: rgba(50, 49, 45, 0.4);
     --decorative-circle-clr: #353430;
     --menu-color: #353430;
     --rec-color: transparent;
