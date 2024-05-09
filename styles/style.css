@@ -55,12 +55,6 @@
   margin-bottom: 17px;
 }
 
-@media (width <= 768px) {
-  .title-decor-2 {
-    margin-bottom: 20px;
-  }
-}
-
 .subtitle-decor {
   font-size: 18px;
   font-weight: 400;
@@ -257,7 +251,6 @@
 
 @media (width >= 375px) {
   .main {
-    gap: 50px;
     padding: 40px 10px;
   }
 }
@@ -422,7 +415,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 668px;
 }
 
 .footer__text {
